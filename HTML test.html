@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Header styles */
+    .header {
+  background: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.header1 {
+  background: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 80px;
+}
+
+.right-paragraph {
+      margin: 0;
+      padding: 0px;
+      display: flex;
+      justify-content: right;
+      align-items: right;
+
+    }
+    
+   
+
+    .rectangle {
+  /* Layout Properties */
+position: fixed;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 164px;
+height: 48px;
+
+/* UI Properties */
+background-image: url('C:\Users\Mahadev\OneDrive\Desktop\Busibud HTML Assignment\Images\Rectangle.png');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+border: 1px solid hsla(0, 0%, 44%, 1);
+opacity: 1;
+
+}
+
+    
+    .nav {
+      display: inline-block;
+      margin-right: 20px;
+      font: normal normal 600 19px/26px Segoe UI;
+      left: 249px;
+      
+    }
+    
+    .nav-dropdown {
+      display: inline-block;
+      position: relative;
+      font: normal normal 600 19px/26px Segoe UI;
+      
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: lightgray;
+      min-width: 160px;
+      padding: 10px;
+    }
+    
+    .nav-dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    /* Body styles */
+    .body {
+      padding: 20px;
+      
+    }
+       
+    .button {
+            position: absolute;
+           width: 247px;
+            height: 60px;
+            background: hsla(204, 84%, 49%, 1) 0% 0% no-repeat padding-box;
+            box-shadow: 0px 16px 48px hsla(0, 0%, 0%, 0.16);
+            border-radius: 50px;
+            opacity: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: hsla(204, 84%, 59%, 1);
+        }
+    .box {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      
+    }
+    
+    .box-heading {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font: normal normal bold 35px/47px Nunito Sans;
+    }
+    
+    .square {
+  display: inline-block;
+  background: white;
+  border-radius: 10px;
+  width: 308px;
+  height: 320px;
+  margin-right: 10px;
+  box-shadow: 0 6px 10px 4px rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
+}
+
+
+.image-figures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.image-figures > img {
+  margin: 0 110px; /* Adjust the spacing between the images as desired */
+}
+
+.image-container {
+  position: relative;
+}
+
+.right-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 100%;
+  height: 490px;
+  width: 518px;
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+
+
+    
+.squaree {
+  display: inline-block;
+  background: white;
+  border-radius: 10px;
+  width: 308px;
+  height: 320px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+    
+    .image-figures img {
+      width: 200px;
+      height: 200px;
+      margin-right: 10px;
+    }
+    
+    
+    /* Footer styles */
+    .footer {
+      background: black;
+      color: white;
+      padding: 100px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+      <img src="C:\Users\Mahadev\OneDrive\Desktop\Busibud HTML Assignment\Images\Rectangle.png">
+  </div> 
+  
+  <div class="header1">
+    <div class="nav">Nav 1</div>
+    <div class="nav">Nav 2</div>
+    <div class="nav-dropdown">
+      <div class="nav">Nav 3 &#9662;</div>
+      <div class="dropdown-content">
+        <div class="nav">Dropdown 1</div>
+        <div class="nav">Dropdown 2</div>
+        <div class="nav">Dropdown 3</div>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <div class="nav">Nav 4 &#9662;</div>
+      <div class="dropdown-content">
+        <div class="nav">Dropdown 4</div>
+        <div class="nav">Dropdown 5</div>
+        <div class="nav">Dropdown 6</div>
+      </div>
+    </div>
+    <div class="nav">Nav 5</div>
+    <div class="nav">Nav 6</div>
+    <div class="nav">Nav 7</div>
+    <div class="nav">Nav 8</div>
+  </div>
+
+  <div class="image-container">
+    <img src="C:\Users\Mahadev\OneDrive\Desktop\Busibud HTML Assignment\Images\maskgroup1.png" alt="Image" class="right-image">
+  </div> <br>
+  
+  <div class="body">
+    <h1>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed <br>commodo est. Pellentesque eu placerat mauris. Etiam ut maximus <br>ante. Suspendisse varius dolor nec bibendum dignissim. Proin in <br>diam a justo sollicitudin mattis eu sagittis nunc. In hac habitasse <br> platea dictumst.</p>
+    </div> <br> <br> <br> <br> <br> <br>
+
+    
+    
+
+  <a class="button" href="https://www.smartsheet.com/sites/default/files/styles/900px/public/IC-Product-Price-List-Template.webp?itok=sY19Vxzo">Check Pricing</a> <br> <br> <br> <br> <br> <br> <br> <br> <br>  <br> <br>
+
+    <div class="box">
+      <div class="box-heading"> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div> <br> <br> <br>
+      <div class="square">
+        <h3> Lorem ipsum dolor sit .</h3> <br> <br>
+      <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Ut sed <br> commodo est.Pellentesque eu <br> placerat mauris. Etiam ut maximus <br> ante. Suspendisse varius dolor <br> nec bibendum dignissim. Proin in <br> diam a justo sollicitudin mattis <br> eu sagittisnunc. In hac habitasse.</p></div>
+      <div class="square">
+        <h3> Lorem ipsum dolor sit .</h3> <br> <br>
+        <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Ut sed <br> commodo est.Pellentesque eu <br> placerat mauris. Etiam ut maximus <br> ante. Suspendisse varius dolor <br> nec bibendum dignissim. Proin in <br> diam a justo sollicitudin mattis <br> eu sagittisnunc. In hac habitasse.</p></div>
+      <div class="square">
+        <h3> Lorem ipsum dolor sit .</h3> <br> <br>
+      <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Ut sed <br> commodo est.Pellentesque eu <br> placerat mauris. Etiam ut maximus <br> ante. Suspendisse varius dolor <br> nec bibendum dignissim. Proin in <br> diam a justo sollicitudin mattis <br> eu sagittisnunc. In hac habitasse.</p> </div>
+    </div>
+    
+    <div class="box">
+      <div class="box-heading">Lorem ipsum dolor sit amet</div> <br> <br>
+      <div class="image-figures">
+        <img src="C:\Users\Mahadev\OneDrive\Desktop\Busibud HTML Assignment\Images\comp1.png" alt="Person using laptop">
+        <img src="C:\Users\Mahadev\OneDrive\Desktop\Busibud HTML Assignment\Images\comp2.png" alt="Person using laptop">
+        <img src="C:\Users\Mahadev\OneDrive\Desktop\Busibud HTML Assignment\Images\comp3.png" alt="Person using laptop">
+      </div>
+
+      <div class="container">
+        <div class="squaree">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit. Ut sed commodo est.<br>Pellentesque eu placerat mauris. Etiam<br>ut maximus ante. Suspendisse varius<br>dolor nec bibendum dignissim. Proin in<br>diam a justo sollicitudin mattis eu sagittis<br>nunc. In hac habitasse platea dictumst.</div>
+        <div class="squaree">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit. Ut sed commodo est.<br>Pellentesque eu placerat mauris. Etiam<br>ut maximus ante. Suspendisse varius<br>dolor nec bibendum dignissim. Proin in<br>diam a justo sollicitudin mattis eu sagittis<br>nunc. In hac habitasse platea dictumst.</div>
+        <div class="squaree">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit. Ut sed commodo est.<br>Pellentesque eu placerat mauris. Etiam<br>ut maximus ante. Suspendisse varius<br>dolor nec bibendum dignissim. Proin in<br>diam a justo sollicitudin mattis eu sagittis<br>nunc. In hac habitasse platea dictumst.</div>
+      </div>
+      
+      
+
+    
+    <div class="box">
+      <div class="box-heading">Lorem ipsum dolor sit amet,consectetur adipiscing elit.</div>
+      <div class="left-paragraph">
+        <h2><img src="C:\Users\Mahadev\OneDrive\Desktop\Busibud HTML Assignment\Images\savemoney.png">Lorem ipsum dolor sit .</h2>
+        <p>Adipiscing elit. Ut sed commodo est. Pellentesque eu placerat mauris. <br> Ut maximus ante. Suspendisse varius dolor nec bibendum dignissim.</p>
+      </div> <br> <a class="button" href="https://www.smartsheet.com/sites/default/files/styles/900px/public/IC-Product-Price-List-Template.webp?itok=sY19Vxzo">Check Pricing</a><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+      <div class="right-paragraph">
+        <h2><img src="C:\Users\Mahadev\OneDrive\Desktop\Busibud HTML Assignment\Images\accuracy.png">Lorem ipsum dolor sit .</h2>
+        <p>Adipiscing elit. Ut sed commodo est. Pellentesque eu placerat mauris. <br> Ut maximus ante. Suspendisse varius dolor nec bibendum dignissim. <br> <br> <br> <a class="button" href="https://www.smartsheet.com/sites/default/files/styles/900px/public/IC-Product-Price-List-Template.webp?itok=sY19Vxzo">Check Pricing</a> </p>
+      </div> <br>  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+      <div class="left-paragraph">
+        <h2><img src="C:\Users\Mahadev\OneDrive\Desktop\Busibud HTML Assignment\Images\hiring.png">Lorem ipsum dolor sit .</h2>
+        <p>Adipiscing elit. Ut sed commodo est. Pellentesque eu placerat mauris. <br> Ut maximus ante. Suspendisse varius dolor nec bibendum dignissim.</p>
+      </div> <br> <a class="button" href="https://www.smartsheet.com/sites/default/files/styles/900px/public/IC-Product-Price-List-Template.webp?itok=sY19Vxzo">Check Pricing</a> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+      <div class="right-paragraph">
+        <h2><img src="C:\Users\Mahadev\OneDrive\Desktop\Busibud HTML Assignment\Images\money back.png">Lorem ipsum dolor sit .</h2>
+        <p>Adipiscing elit. Ut sed commodo est. Pellentesque eu placerat mauris. <br> Ut maximus ante. Suspendisse varius dolor nec bibendum dignissim. <br> <br> <br> <a class="button" href="https://www.smartsheet.com/sites/default/files/styles/900px/public/IC-Product-Price-List-Template.webp?itok=sY19Vxzo">Check Pricing</a></p>
+      </div> <br>  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    </div>
+    
+    <div class="box">
+      <div class="box-heading">Lorem ipsum dolor sit.</div>
+      <div class="square"><img src="C:\Users\Mahadev\OneDrive\Desktop\Busibud HTML Assignment\Images\cesar.png">Jhon Doe <br> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed <br>commodo est. Pellentesque eu placerat mauris. Etiam ut maximus <br>ante. Suspendisse varius dolor nec bibendum dignissim. Proin in <br>diam a justo sollicitudin mattis eu sagittis nunc. In hac habitasse <br> platea dictumst.</p>
+      </div>
+      <div class="square"><img src="C:\Users\Mahadev\OneDrive\Desktop\Busibud HTML Assignment\Images\christina.png">Amanda green <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed <br>commodo est. Pellentesque eu placerat mauris. Etiam ut maximus <br>ante. Suspendisse varius dolor nec bibendum dignissim. Proin in <br>diam a justo sollicitudin mattis eu sagittis nunc. In hac habitasse <br> platea dictumst.</p>
+       </div>
+      <div class="square"><img src="C:\Users\Mahadev\OneDrive\Desktop\Busibud HTML Assignment\Images\alex.png">Sam Cooper <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed <br>commodo est. Pellentesque eu placerat mauris. Etiam ut maximus <br>ante. Suspendisse varius dolor nec bibendum dignissim. Proin in <br>diam a justo sollicitudin mattis eu sagittis nunc. In hac habitasse <br> platea dictumst.</p>
+       </div>
+    </div> <br> <br> <br> <br> <br> <br> <br> <br>
+    
+    <div class="box">
+      <div class="box-heading">Lorem ipsum dolor sit amet</div> <br> <br> <br> <br> <br> <br> <br> <br>
+      <div class="image-figures">
+        <a href="https://www.formsonfire.com/">
+          <img src="C:\Users\Mahadev\OneDrive\Desktop\Busibud HTML Assignment\Images\FoF.png" alt="formsonfire">
+        </a>
+        <a href="https://electroneek.com/">
+        <img src="C:\Users\Mahadev\OneDrive\Desktop\Busibud HTML Assignment\Images\lectro.png">
+        </a>
+        <a href="https://www.jotform.com/">
+        <img src="C:\Users\Mahadev\OneDrive\Desktop\Busibud HTML Assignment\Images\iauditor.png">
+        </a>
+      </div> <br> <br> <br> <br> <br> <br> <br> <br>
+      <div class="footer">
+        C Helplama 2021
+      </div>
+    </div>
+  </div>
+</body>
+</html>
